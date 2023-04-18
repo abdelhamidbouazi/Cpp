@@ -22,7 +22,7 @@ g++ -Wall -Werror -Wextra -std=c++98 main.cpp
 
 You can then run the compiled executable by running the following command:
 
-./a.out
+make
 
 
 ## Contributing
