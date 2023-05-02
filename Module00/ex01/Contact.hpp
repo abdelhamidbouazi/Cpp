@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 14:32:14 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/02 14:37:59 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/02 16:24:11 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,8 @@ class Contact {
 		Contact();
 		~Contact();
 		void	starter(void);
-		void	print();
-
-
+		int		print();
+		void	printSpecific();
 };
 
 # endif
