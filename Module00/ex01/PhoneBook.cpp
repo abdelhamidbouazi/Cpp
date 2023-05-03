@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 19:56:44 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/02 17:15:26 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/03 00:32:38 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	PhoneBook::prompt(void)
 	std::cout << "-      ~>EXIT       To exit                   -"<<std::endl;
 	std::cout << "-                                             -"<<std::endl;
 	std::cout << "-----------------------------------------------"<<std::endl;
-	std::cout << ""<<std::endl;
+	std::cout << std::endl;
 }
 
 void	PhoneBook::searchContact()
@@ -52,8 +52,10 @@ void	PhoneBook::searchContact()
 	std::cout << "-----------------------------------------------"<<std::endl;
 	std::cout << "-                Contact List                 -" << std::endl;
 	std::cout << "-----------------------------------------------"<<std::endl;
+	std::cout << "- index | First Name | Last Name | Nickname   -" << std::endl;
+	std::cout << "-----------------------------------------------"<<std::endl;
 	for (int i = 0; i < 8 ; i++){
-		this->_contact[i].print();
+		this->_contact[i].print(i);
 	}
 	std::cout << "-----------------------------------------------"<<std::endl;
 

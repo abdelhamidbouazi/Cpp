@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 14:32:14 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/02 16:24:11 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/03 00:47:24 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define CONTACT_HPP
 
 #include <iostream>
+// #include <iomanip>
 
 class Contact {
 	private :
@@ -26,7 +27,7 @@ class Contact {
 		Contact();
 		~Contact();
 		void	starter(void);
-		int		print();
+		int		print(int i);
 		void	printSpecific();
 };
 

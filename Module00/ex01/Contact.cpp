@@ -6,12 +6,15 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 20:00:47 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/02 17:07:47 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/03 01:16:09 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
 #include <fstream>
+#include <string>
+#include <iostream>
+#include <string>
 
 
 Contact::Contact()
@@ -55,13 +58,28 @@ void Contact::starter(void){
 	}
 }
 
+
+std::string spaces(int n) {
+    std::string result = "";
+    for (int i = 0; i < n; i++) {
+        result += " ";
+    }
+    return result;
+}
 // here I will print search
-int	Contact::print()
+int	Contact::print(int i)
 {
 	if (!this->firstName.empty()){
-		std::cout << this->firstName << std::endl;
-		std::cout << this->lastName << std::endl;
-		std::cout << this->nickName << std::endl;
+		std::cout << "-   " << ( i + 1) << "   | ";
+		std::cout << ( this->firstName.length() > 10 ? this->firstName.substr(0, 8) + "." : this->firstName );
+		std::cout << spaces((10 - this->firstName.length()));
+		std::cout << " | ";
+		std::cout << ( this->lastName.length() > 10 ? this->lastName.substr(0, 8) + "." : this->lastName );
+		std::cout << spaces((9 - this->lastName.length()));
+		std::cout << " | ";
+		std::cout << ( this->nickName.length() > 10 ? this->nickName.substr(0, 8) + "." : this->nickName );
+		std::cout << spaces((11 - this->nickName.length()));
+		std::cout << "-" << std::endl;
 		return 0;
 	}
 	else
