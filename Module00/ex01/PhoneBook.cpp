@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 19:56:44 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/03 00:32:38 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/03 04:13:26 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,11 +54,9 @@ void	PhoneBook::searchContact()
 	std::cout << "-----------------------------------------------"<<std::endl;
 	std::cout << "- index | First Name | Last Name | Nickname   -" << std::endl;
 	std::cout << "-----------------------------------------------"<<std::endl;
-	for (int i = 0; i < 8 ; i++){
+	for (int i = 0; i < 8 ; i++)
 		this->_contact[i].print(i);
-	}
 	std::cout << "-----------------------------------------------"<<std::endl;
-
 	std::cout << "Select Contact index or '0' to exit Search mode"<<std::endl;
 	getline(std::cin, index);
 	if (!index.empty()) {
@@ -94,5 +92,5 @@ void	PhoneBook::searchContact()
 				std::cout << "~Error: Invalid index" << std::endl;
 				break;
 		}
-}
+	}
 }
