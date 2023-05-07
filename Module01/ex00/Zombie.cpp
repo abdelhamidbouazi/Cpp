@@ -6,19 +6,18 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:49:01 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/05 03:49:33 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/07 03:31:19 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include <iostream>
 
 Zombie::Zombie(std::string	n){
 	Name = n;
 }
 
 Zombie::~Zombie(){
-	std::cout << Name << ": Has been destroyed !!" << std::endl;
+	std::cout << Name << ": Destroyed !!" << std::endl;
 }
 void Zombie::announce(void)
 {

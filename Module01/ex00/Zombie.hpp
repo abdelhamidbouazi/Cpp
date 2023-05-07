@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:26:13 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/05 03:48:38 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/07 03:31:24 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ZOMBIE_HPP
 
 #include <iostream>
-
 
 class Zombie
 {
