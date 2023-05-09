@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 05:55:28 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/07 07:08:50 by abouazi          ###   ########.fr       */
+/*   Created: 2023/05/09 03:04:12 by abouazi           #+#    #+#             */
+/*   Updated: 2023/05/09 04:03:12 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 #include "HumanA.hpp"
 #include "HumanB.hpp"
 
-int main(){
+int main()
+{
 	{
 	Weapon club = Weapon("crude spiked club");
 	HumanA bob("Bob", club);

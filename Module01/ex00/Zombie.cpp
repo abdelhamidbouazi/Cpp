@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:49:01 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/07 03:31:19 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/07 22:41:36 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ void Zombie::announce(void)
 }
 
 Zombie* Zombie::newZombie(std::string name) {
-	Zombie*	z_ptr;
-	z_ptr = new Zombie(name);
+	Zombie*	z_ptr = new Zombie(name);
     return z_ptr;
 }
 

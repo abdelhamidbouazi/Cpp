@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/07 06:10:08 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/07 07:16:30 by abouazi          ###   ########.fr       */
+/*   Created: 2023/05/09 03:44:04 by abouazi           #+#    #+#             */
+/*   Updated: 2023/05/09 03:56:14 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 class HumanB
 {
 	private:
-		Weapon*	wHB;
 		std::string	name;
+		Weapon*		weapon;
 	public:
-		HumanB(std::string Name);
+		HumanB(std::string	_name);
 		~HumanB();
-		void	setWeapon(Weapon& whb);
+		void	setWeapon(Weapon&	_weapon);
 		void	attack();
 };
+
