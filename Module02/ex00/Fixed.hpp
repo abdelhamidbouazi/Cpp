@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 10:43:17 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/17 16:00:03 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/18 14:07:08 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@ class Fixed
 	public:
 		Fixed();
 		Fixed( const Fixed &cp );
-		Fixed& operator=( const Fixed &op );
-		~Fixed();
+
+		Fixed& 	operator=( const Fixed &op );
 
 		int		getRawBits( void ) const;
 		void	setRawBits( int const raw );
+
+		~Fixed();
 };
 
 # endif
