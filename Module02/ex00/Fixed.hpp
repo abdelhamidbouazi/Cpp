@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/14 03:32:34 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/14 03:53:14 by abouazi          ###   ########.fr       */
+/*   Created: 2023/05/16 10:43:17 by abouazi           #+#    #+#             */
+/*   Updated: 2023/05/18 01:33:43 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 # ifndef FIXED_HPP
 # define FIXED_HPP
@@ -18,11 +19,17 @@
 class Fixed
 {
 	private:
-		int					fixedPointNum;
-		static const int	fractionalBits;
+		int					fixePointValue;
+		static const int	fractionalBits = 8;
+
 	public:
 		Fixed();
-		Fixed(const &Fixed	cp);
-		Fixed& operator=(const Fixed& other);
+		Fixed( const Fixed &cp );
+		Fixed& operator=( const Fixed &op );
 		~Fixed();
+
+		int		getRawBits( void ) const;
+		void	setRawBits( int const raw );
 };
+
+# endif
