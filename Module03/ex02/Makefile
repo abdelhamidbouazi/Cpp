@@ -6,14 +6,14 @@
 #    By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/21 02:54:49 by abouazi           #+#    #+#              #
-#    Updated: 2023/05/21 05:30:20 by abouazi          ###   ########.fr        #
+#    Updated: 2023/05/21 16:20:08 by abouazi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = ./main.cpp ./ClapTrap.cpp ./ScavTrap.cpp
-Header = ./ClapTrap.hpp ./ScavTrap.hpp
+SRC = ./main.cpp ./ClapTrap.cpp ./ScavTrap.cpp ./FragTrap.cpp
+Header = ./ClapTrap.hpp ./ScavTrap.hpp ./FragTrap.hpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
 
