@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 14:22:28 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 10:41:52 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/24 17:49:48 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ANIMAL_HPP
 
 #include <iostream>
+
 
 class Animal
 {

@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:25:07 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 15:58:36 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/24 17:45:33 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 Cat::Cat() : Animal("Cat")
 {
-	std::cout << this->type <<": constructor called" << std::endl;
+	(this->brain = new Brain()) ? (std::cout << this->type <<": constructor called" << std::endl) : (std::cout << "Memory allocation failed" << std::endl);
+
 }
 
 Cat::~Cat()
 {
+	delete	this->brain;
 	std::cout << this->type <<": destructor called" << std::endl;
 }
 Cat::Cat(const Cat &cp) : Animal(cp)

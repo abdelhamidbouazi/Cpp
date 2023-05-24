@@ -6,14 +6,14 @@
 #    By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/24 10:28:42 by abouazi           #+#    #+#              #
-#    Updated: 2023/05/24 14:01:07 by abouazi          ###   ########.fr        #
+#    Updated: 2023/05/24 17:48:55 by abouazi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-SRC = ./main.cpp ./Animal.cpp ./Dog.cpp ./Cat.cpp ./WrongAnimal.cpp ./WrongCat.cpp
-Header = ./Animal.hpp ./Dog.hpp ./Cat.hpp ./WrongAnimal.hpp ./WrongCat.hpp
+SRC = ./main.cpp ./Animal.cpp ./Dog.cpp ./Cat.cpp ./WrongAnimal.cpp ./WrongCat.cpp ./Brain.cpp
+Header = ./Animal.hpp ./Dog.hpp ./Cat.hpp ./WrongAnimal.hpp ./WrongCat.hpp ./Brain.hpp
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
 
