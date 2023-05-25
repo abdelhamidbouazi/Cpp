@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 10:49:49 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 17:43:49 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/25 14:29:54 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ Dog::Dog() : Animal("Dog")
 
 Dog::~Dog()
 {
-	delete	this->brain;
 	std::cout << this->type <<": destructor called" << std::endl;
+	delete	this->brain;
 }
 
 Dog::Dog(const Dog &cp) : Animal(cp)
@@ -32,8 +32,11 @@ Dog::Dog(const Dog &cp) : Animal(cp)
 Dog& Dog::operator=(const Dog &cp)
 {
 	if (this != &cp)
-		Animal::operator=(cp);
-	return *this;
+    {
+        this->type = cp.type;
+        this->brain = new Brain( *cp.brain );
+    }
+    return *this;
 }
 
 void Dog::makeSound() const

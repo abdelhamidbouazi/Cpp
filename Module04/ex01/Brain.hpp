@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 16:46:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 17:48:19 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/25 14:20:16 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Brain
 		std::string	ideas[100];
 	public:
 		Brain();
-		Brain(const Brain &cp);
+		Brain(const Brain& cp);
 		Brain& operator=(const Brain& cp);
 		~Brain();
 };

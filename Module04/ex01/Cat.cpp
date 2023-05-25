@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:25:07 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 17:45:33 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/25 14:30:16 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,21 @@
 
 Cat::Cat() : Animal("Cat")
 {
-	(this->brain = new Brain()) ? (std::cout << this->type <<": constructor called" << std::endl) : (std::cout << "Memory allocation failed" << std::endl);
-
+	// if(!(this->brain = new Brain()))
+	// 	return;
+	// std::cout << "Memory allocation failed" << std::endl;
+	try {
+        this->brain = new Brain();
+    }
+    catch (const std::bad_alloc& e) {
+        std::cout << "Memory Allocation is failed : " << e.what() << std::endl;
+    }
 }
 
 Cat::~Cat()
 {
-	delete	this->brain;
 	std::cout << this->type <<": destructor called" << std::endl;
+	delete	this->brain;
 }
 Cat::Cat(const Cat &cp) : Animal(cp)
 {
@@ -32,8 +39,11 @@ Cat::Cat(const Cat &cp) : Animal(cp)
 Cat& Cat::operator=(const Cat &cp)
 {
 	if (this != &cp)
-		Animal::operator=(cp);
-	return *this;
+    {
+        this->type = cp.type;
+        this->brain = new Brain( *cp.brain );
+    }
+    return *this;
 }
 
 void Cat::makeSound() const

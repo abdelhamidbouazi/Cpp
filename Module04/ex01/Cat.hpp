@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:25:22 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 17:44:41 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/05/25 14:22:43 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ class Cat : public Animal
 		Cat(const Cat &cp);
 		Cat& operator=(const Cat &cp);
 		~Cat();
-
-	void makeSound() const;
+		void makeSound() const;
 };
 
 # endif
