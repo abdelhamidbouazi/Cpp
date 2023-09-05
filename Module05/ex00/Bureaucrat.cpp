@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/05 11:01:52 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/05 16:17:04 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ Bureaucrat::Bureaucrat(int gr, const std::string na) : grade(gr), name(na)
 		throw Bureaucrat::GradeTooLowException();
 	if (gr < 1)
 		throw Bureaucrat::GradeTooHighException();
-
 }
 
 
@@ -47,26 +46,36 @@ Bureaucrat &Bureaucrat::operator=(const Bureaucrat &cp)
 // Getters
 std::string const Bureaucrat::getName() const
 {
-	return name;
+	return this->name;
 }
 
 int Bureaucrat::getGrade() const
 {
-	return grade;
+	return this->grade;
 }
 
 // Increment and Decrement
 void Bureaucrat::incrementBureaucratGrade()
 {
+	if ((grade - 1) < 1)
+		throw Bureaucrat::GradeTooHighException();
 	this->grade--;
 }
 
 void Bureaucrat::decrementBureacratGrade()
 {
+	if ((grade + 1) > 150)
+		throw Bureaucrat::GradeTooLowException();
 	this->grade++;
 }
 
 Bureaucrat::~Bureaucrat()
 {
 	std::cout << "Desctructor Called" << std::endl;
+}
+
+std::ostream &operator<<(std::ostream &otsm, const Bureaucrat &brct)
+{
+	otsm << brct.getName() << ", bureaucrat grade " << brct.getGrade() << "." << std::endl;
+	return otsm;
 }

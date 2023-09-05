@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 10:49:18 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/05 10:55:51 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/05 16:18:02 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 int main()
 {
-	Bureaucrat b;
 
 	try {
         Bureaucrat b(1000, "Abdelhamid");
@@ -26,12 +25,20 @@ int main()
         std::cout << e.what() << std::endl;
     }
 	try {
-        Bureaucrat b(-1, "Abdelhamid");
+        Bureaucrat b(149, "Abdelhamid");
 
         std::cout << b.getGrade() << std::endl;
-
-        b.incrementBureaucratGrade();
-    } catch (Bureaucrat::GradeTooHighException &e) {
+        b.decrementBureacratGrade();
+        std::cout << b.getGrade() << std::endl;
+        b.decrementBureacratGrade();
+        std::cout << b.getGrade() << std::endl;
+    } catch (Bureaucrat::GradeTooLowException &e) {
         std::cout << e.what() << std::endl;
     }
+	Bureaucrat b;
+
+	std::cout << b;
+	// Bureaucrat c(b);
+
+	// while (1);
 }
