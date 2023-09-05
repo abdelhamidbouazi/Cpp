@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 14:22:28 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/24 10:41:52 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/05 10:02:10 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ class Animal
 
 		virtual void makeSound() const;
 		std::string getType() const;
+
 };
 
 # endif

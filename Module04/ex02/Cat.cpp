@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:25:07 by abouazi           #+#    #+#             */
-/*   Updated: 2023/05/25 14:37:23 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/08/26 16:52:52 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ Cat::~Cat()
 	std::cout << this->type <<": destructor called" << std::endl;
 	delete	this->brain;
 }
+
 Cat::Cat(const Cat &cp) : AAnimal(cp)
 {
 	*this = cp;
