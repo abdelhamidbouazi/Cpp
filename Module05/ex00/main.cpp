@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 10:49:18 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/05 16:18:02 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/05 16:22:22 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int main()
 	Bureaucrat b;
 
 	std::cout << b;
-	// Bureaucrat c(b);
+	Bureaucrat c(b);
 
 	// while (1);
 }

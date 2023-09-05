@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/05 16:17:04 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/05 16:22:11 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ Bureaucrat::Bureaucrat(int gr, const std::string na) : grade(gr), name(na)
 }
 
 
-Bureaucrat::Bureaucrat(const Bureaucrat &cp)
+Bureaucrat::Bureaucrat(const Bureaucrat &cp) : name(cp.name)
 {
-		this->grade = cp.grade;
+	*this = cp;
 }
 
 Bureaucrat &Bureaucrat::operator=(const Bureaucrat &cp)
