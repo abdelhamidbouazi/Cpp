@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/05 16:22:11 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/07 13:29:49 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,16 @@ std::ostream &operator<<(std::ostream &otsm, const Bureaucrat &brct)
 {
 	otsm << brct.getName() << ", bureaucrat grade " << brct.getGrade() << "." << std::endl;
 	return otsm;
+}
+
+void Bureaucrat::signForm(Form &f)
+{
+	try {
+		f.beSgined(*this);
+		std::cout << *this << " signed " << f << std::endl;
+	}
+	catch (std::exception& e) {
+		std::cout << *this << " cannot sign " << f << " because " <<e.what() << std::endl;
+	}
+	
 }
