@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 16:28:59 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/07 13:22:08 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/07 14:20:12 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,17 @@ void Form::beSigned(Bureaucrat &b)
 	this->isSigned = true;
 }
 
+
+std::ostream &operator<<(std::ostream &otsm, const Form &fm)
+{
+	otsm << fm.getName() << "'s sign grade is: " << fm.getSignGrade() << ", execution grade is: " << fm.getExecGrade() << std::endl;
+	if (fm.getIsSigned() == true)
+		otsm << fm.getName() << " is signed." << std::endl;
+	else if (fm.getIsSigned() == false)
+		otsm << fm.getName() << " is not signed." << std::endl;
+	return otsm;
+}
+
 Form::~Form()
 {
 }
@@ -69,14 +80,4 @@ int Form::getSignGrade() const
 int Form::getExecGrade() const
 {
 	return execGrade;
-}
-
-std::ostream &operator<<(std::ostream &otsm, const Form &fm)
-{
-	otsm << fm.getName() << "'s sign grade is: " << fm.getSignGrade() << ", execution grade is: " << fm.getExecGrade() << std::endl;
-	if (fm.getIsSigned() == true)
-		otsm << fm.getName() << " is signed." << std::endl;
-	else if (fm.getIsSigned() == false)
-		otsm << fm.getName() << " is not signed." << std::endl;
-	return otsm;
 }

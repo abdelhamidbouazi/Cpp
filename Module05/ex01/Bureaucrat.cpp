@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/07 13:34:18 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/07 14:28:30 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,18 @@ void Bureaucrat::decrementBureacratGrade()
 	this->grade++;
 }
 
-Bureaucrat::~Bureaucrat()
+void	Bureaucrat::signForm(Form& f)
 {
-	// std::cout << "Desctructor Called" << std::endl;
+	try {
+		f.beSigned(*this);
+		std::cout << *this << " signed " << f << std::endl;
+	}
+	catch (std::exception& e) {
+		std::cout << *this << " cannot sign " << f << " because " <<e.what() << std::endl;
+	}
 }
+
+Bureaucrat::~Bureaucrat(){}
 
 std::ostream &operator<<(std::ostream &otsm, const Bureaucrat &brct)
 {
