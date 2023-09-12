@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/07 14:21:08 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/11 13:33:30 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,3 +79,5 @@ std::ostream &operator<<(std::ostream &otsm, const Bureaucrat &brct)
 	otsm << brct.getName() << ", bureaucrat grade " << brct.getGrade() << "." << std::endl;
 	return otsm;
 }
+
+

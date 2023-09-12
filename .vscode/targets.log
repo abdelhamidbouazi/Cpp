@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Thu Sep  7 11:51:22 2023
+# Make data base, printed on Tue Sep 12 18:11:02 2023
 
 # Variables
 
@@ -27,7 +27,6 @@ VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
 # automatic
 @F = $(notdir $@)
 # makefile
- 
 CURDIR := /Users/abdelhamidbouazi/Desktop/Cpp
 # makefile
 SHELL = /bin/sh
@@ -37,6 +36,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 _ = /usr/bin/make
 # makefile
 MAKEFILE_LIST := 
+ 
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -119,8 +119,6 @@ MFLAGS = -Rrqp
 XPC_SERVICE_NAME = application.com.microsoft.VSCode.909918.909924
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -139,14 +137,16 @@ LC_ALL = C
 ^F = $(notdir $^)
 # default
 SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
 # environment
 MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 87336
+VSCODE_PID = 66151
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=1/85=1%
+# Load=65/1024=6%, Rehash=0, Collisions=1/86=1%
 
 # Pattern-specific Variable Values
 
@@ -163,6 +163,7 @@ VSCODE_PID = 87336
 # No implicit rules.
 
 # Files
+ 
 
 # Not a target:
 all:
@@ -171,7 +172,6 @@ all:
 #  File does not exist.
 #  File has not been updated.
 # variable set hash-table stats:
- 
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
@@ -229,6 +229,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Sep  7 11:51:22 2023
+# Finished Make data base on Tue Sep 12 18:11:02 2023
 
  
