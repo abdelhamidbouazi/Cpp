@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 16:28:56 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/12 17:11:56 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:18:58 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 # define AFORM_HPP
 
 #include <iostream>
+#include <fstream>
+#include "Bureaucrat.hpp"
 
 class Bureaucrat;
 
@@ -48,6 +50,12 @@ class AForm
 					return "Grade Too Low";
 				}
 		};
+		class FormNotSigned : public std::exception
+		{
+			public : virtual const char * what() const throw(){
+				return "Form is not SIGNED !!!";
+			}
+		};
 
 		// getters
 
@@ -55,6 +63,8 @@ class AForm
 		bool		getIsSigned() const;
 		int			getSignGrade() const;
 		int			getExecGrade() const;
+
+		virtual void	execute(Bureaucrat const & executor) const = 0;
 
 };
 

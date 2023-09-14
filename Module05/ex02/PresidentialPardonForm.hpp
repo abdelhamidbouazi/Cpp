@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:51:40 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/12 18:16:22 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/13 15:40:38 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class PresidentialPardonForm : public AForm
 
 		PresidentialPardonForm(PresidentialPardonForm &cp);
 		PresidentialPardonForm& operator=(const PresidentialPardonForm &cp);
+
+		void	execute(Bureaucrat const & executor) const;
 };
 
 

@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:01 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/12 17:09:16 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/13 16:12:12 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 
 #include <iostream>
 #include "AForm.hpp"
-// class AForm;
+
+class AForm;
 
 class Bureaucrat
 {
