@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:03 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/12 17:09:38 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/14 15:53:56 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,16 @@ void	Bureaucrat::signForm(AForm& f)
 	}
 	catch (std::exception& e) {
 		std::cout << *this << " cannot sign " << f << " because " <<e.what() << std::endl;
+	}
+}
+
+void Bureaucrat::executeForm(AForm const &aform)
+{
+	try {
+		aform.execute(*this);
+	}
+	catch (std::exception& e) {
+		std::cout << "Bureacrat " << name << "can't execute " << aform.getName() << " : " << e.what() << std::endl;
 	}
 }
 

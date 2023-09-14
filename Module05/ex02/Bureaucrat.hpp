@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 16:57:01 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/13 16:12:12 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/14 15:50:28 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ class Bureaucrat
 		void	decrementBureacratGrade();
 
 		void	signForm(AForm& f);
+		void	executeForm(AForm const & aform);
 };
 
 std::ostream& operator<<(std::ostream& otsm, const Bureaucrat& brct);

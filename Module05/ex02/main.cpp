@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:08:30 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/13 16:22:01 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/14 16:24:12 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,32 +16,29 @@
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 
-
 int main()
 {
 
     try {
+        std::cout << "----ShrubberyCreationForm----" << std::endl;
         Bureaucrat b(2, "Abdelhamid");
         ShrubberyCreationForm t("test");
 
         t.beSigned(b);
-        t.execute(b);
-        // ShrubberyCreationForm s("abdelhamid");
-        // PresidentialPardonForm r("Abdelhamid");
-        // AForm f("AForm: Abdelhamid", 100, 50);
+        b.executeForm(t);
 
-        // f.beSigned(b);
+        std::cout << "----ShrubberyCreationForm----" << std::endl;
+        RobotomyRequestForm r("Abdelhamid");
+
+        b.executeForm(r);
+
+        std::cout << "----PresidentialPardonForm----" << std::endl;
+        PresidentialPardonForm p("Abdelhamid");
+
+        b.executeForm(p);
+
         // std::cout << f << std::endl;
     } catch (std::exception &e) {
         std::cout << e.what() << std::endl;
     }
-    // try {
-    //     Bureaucrat b(2, "Abdelhamid");
-    //     AForm f("AForm: Abdelhamid", 100, 50);
-
-    //     b.signForm(f);
-    // }
-    // catch (std::exception& e) {
-    //     std::cerr << e.what() << std::endl;
-    // }
 }
