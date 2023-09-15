@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:08:30 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/15 22:43:15 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/15 22:44:59 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,12 @@ int main()
         PresidentialPardonForm p("Abdelhamid");
 
         b.executeForm(p);
+        {
             Intern  someRandomIntern;
             AForm*   rrf;
             rrf = someRandomIntern.makeForm("robotomy request", "Bender");
-            (void)rrf;
+            delete rrf;
+        }
         std::cout << b << std::endl;
     } catch (std::exception &e) {
         std::cout << e.what() << std::endl;

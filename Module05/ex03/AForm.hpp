@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/05 16:28:56 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/13 16:18:58 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/15 22:46:23 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class AForm
 		const int			execGrade;
 	public:
 		AForm();
-		~AForm();
+		virtual ~AForm();
 
 		AForm(const std::string nm, const int sg, const int eg);
 		AForm(const AForm& cp);

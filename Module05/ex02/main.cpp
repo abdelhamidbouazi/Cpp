@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 17:08:30 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/14 16:24:12 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/14 16:25:34 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main()
 
         b.executeForm(p);
 
-        // std::cout << f << std::endl;
+        std::cout << b << std::endl;
     } catch (std::exception &e) {
         std::cout << e.what() << std::endl;
     }
