@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Tue Sep 12 18:11:02 2023
+# Make data base, printed on Fri Sep 15 22:33:49 2023
 
 # Variables
 
@@ -36,7 +36,6 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{}
 _ = /usr/bin/make
 # makefile
 MAKEFILE_LIST := 
- 
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -74,6 +73,7 @@ LOGNAME = abdelhamidbouazi
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
+ 
 ZSH = /Users/abdelhamidbouazi/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
@@ -163,7 +163,6 @@ VSCODE_PID = 66151
 # No implicit rules.
 
 # Files
- 
 
 # Not a target:
 all:
@@ -222,6 +221,7 @@ GNUmakefile:
 
 # No `vpath' search paths.
 
+ 
 # No general (`VPATH' variable) search path.
 
 # # of strings in strcache: 0
@@ -229,6 +229,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Tue Sep 12 18:11:02 2023
+# Finished Make data base on Fri Sep 15 22:33:49 2023
 
  

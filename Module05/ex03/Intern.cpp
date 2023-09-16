@@ -6,7 +6,7 @@
 /*   By: abouazi <abouazi@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/15 18:40:24 by abouazi           #+#    #+#             */
-/*   Updated: 2023/09/15 22:41:17 by abouazi          ###   ########.fr       */
+/*   Updated: 2023/09/16 14:18:28 by abouazi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ Intern::Intern()
 
 Intern::Intern(Intern const &cp)
 {
-	(void)cp;
+	*this = cp;
 }
 
 Intern &Intern::operator=(const Intern &cp)
@@ -33,15 +33,13 @@ Intern::~Intern()
 
 AForm *Intern::makeForm(std::string name, std::string target)
 {
-
-	std::string formsNames[] = {"shrubbery creation", "robotomy request", "presidential pardon"};
-
 	AForm* aform[] = {
 		new ShrubberyCreationForm(target),
 		new RobotomyRequestForm(target),
 		new PresidentialPardonForm(target)
 	};
-
+	std::string formsNames[] = {"shrubbery creation", "robotomy request", "presidential pardon"};
+	
 	for (int i = 0; i <= 2; i++) {
 		if (name == formsNames[i]) {
 			std::cout <<  "Intern creates" << name << std::endl;
