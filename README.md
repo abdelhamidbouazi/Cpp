@@ -12,6 +12,7 @@ This repository contains my solutions for the C++ programming projects from the 
 - **CPP Module05:** Repetitive inheritance, nested classes, and exceptions.
 - **CPP Module06:** Type casts, templates, and STL.
 - **CPP Module07:** Advanced topics such as smart pointers, lambda expressions, and move semantics.
+- **CPP Module08:** File handling, streams, and error handling.
 
 ## Getting Started
 
