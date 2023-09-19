@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Fri Sep 15 22:33:49 2023
+# Make data base, printed on Mon Sep 18 21:41:48 2023
 
 # Variables
 
@@ -45,13 +45,15 @@ PATH = /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbi
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
+LaunchInstanceID = ABD2EEE1-BB1C-4751-8EC2-66CFB9704D9C
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
 LS_COLORS = di=1;36:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.yc9nG7FQ26/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.OZ7EBUbAef/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -67,13 +69,12 @@ HOME = /Users/abdelhamidbouazi
 # default
 MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
-VSCODE_CODE_CACHE_PATH = /Users/abdelhamidbouazi/Library/Application Support/Code/CachedData/6c3e3dba23e8fadc360aed75ce363ba185c49794
+VSCODE_CODE_CACHE_PATH = /Users/abdelhamidbouazi/Library/Application Support/Code/CachedData/8b617bd08fd9e3fc94d14adb8d358b56e3f72314
 # environment
 LOGNAME = abdelhamidbouazi
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
- 
 ZSH = /Users/abdelhamidbouazi/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
@@ -106,7 +107,7 @@ TMPDIR = /var/folders/9z/zv1pvdld43l0ny5tsq3sg0740000gp/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /Users/abdelhamidbouazi/Library/Application Support/Code/1.81-main.sock
+VSCODE_IPC_HOOK = /Users/abdelhamidbouazi/Library/Application Support/Code/1.82-main.sock
 # environment
 MallocNanoZone = 0
 # makefile
@@ -116,9 +117,11 @@ MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.909918.909924
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.2746331.2746337
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+VSCODE_L10N_BUNDLE_LOCATION = 
 # automatic
 +F = $(notdir $+)
 # environment
@@ -133,6 +136,8 @@ MAKEFILES :=
 PAGER = less
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186ae
 # automatic
 ^F = $(notdir $^)
 # default
@@ -144,9 +149,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 66151
+VSCODE_PID = 1191
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=1/86=1%
+# Load=68/1024=7%, Rehash=0, Collisions=1/89=1%
 
 # Pattern-specific Variable Values
 
@@ -154,9 +159,9 @@ VSCODE_PID = 66151
 
 # Directories
 
-# . (device 16777231, inode 1553483): 14 files, no impossibilities.
+# . (device 16777232, inode 1553483): 17 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -221,7 +226,6 @@ GNUmakefile:
 
 # No `vpath' search paths.
 
- 
 # No general (`VPATH' variable) search path.
 
 # # of strings in strcache: 0
@@ -229,6 +233,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Fri Sep 15 22:33:49 2023
+# Finished Make data base on Mon Sep 18 21:41:48 2023
 
  
